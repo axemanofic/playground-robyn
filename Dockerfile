@@ -1,4 +1,4 @@
-FROM python:3.12-alpine
+FROM python:3.12
 
 ENV ROBYN_HOST='0.0.0.0'
 
@@ -10,4 +10,4 @@ RUN pip install uv && uv sync --no-dev
 
 EXPOSE 8080
 
-CMD ["uv", "run", "piboard", "--log-level=DEBUG"]
+CMD ["python", "piboard"]
