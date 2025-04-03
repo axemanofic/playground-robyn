@@ -10,4 +10,4 @@ RUN pip install uv && uv sync --no-dev
 
 EXPOSE 8080
 
-CMD ["python", "piboard"]
+CMD ["python", "piboard", "--log-level=DEBUG"]
