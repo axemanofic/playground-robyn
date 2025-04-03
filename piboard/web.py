@@ -11,6 +11,7 @@ app = create_app()
 
 ALLOW_CORS(app, origins=["*"])
 
+
 @app.get("/api/info")
 def info():
     os_name = platform.system().lower()
